@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
 export default function Signup2() {
@@ -8,3 +8,5 @@ export default function Signup2() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({});
