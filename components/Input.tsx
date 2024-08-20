@@ -30,10 +30,10 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   input: {
-    height: 40,
-    borderColor: "#ccc",
+    height: 55,
+    borderColor: "#CCCCCC",
     borderWidth: 1,
-    borderRadius: 5,
+    borderRadius: 12,
     paddingHorizontal: 10,
     fontSize: 16,
   },

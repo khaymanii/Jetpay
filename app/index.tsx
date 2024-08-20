@@ -1,11 +1,11 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import Welcome from "./(screens)/Welcome";
+import Signup1 from "./(screens)/Signup1";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Welcome />
+      <Signup1 />{" "}
     </View>
   );
 }
