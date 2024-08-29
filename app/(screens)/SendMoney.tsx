@@ -16,20 +16,22 @@ export default function SendMoney() {
       </View>{" "}
       <View style={styles.acctBalanceContainer}>
         <View>
-          <View>
-            <Text>Total balance</Text>
+          <View style={styles.totalBalanceContainer}>
+            <Text style={styles.totalBalance}>Total balance</Text>
             <Image
               source={require("../../assets/icons/eye.svg")}
               resizeMode="contain"
+              style={styles.eye}
             />
           </View>
-          <Text>$10,500.00</Text>
+          <Text style={styles.amount}>$10,500.00</Text>
         </View>
-        <View>
-          <Text>2109783267</Text>
+        <View style={styles.acctNumberContainer}>
+          <Text style={styles.acctNumber}>2109783267</Text>
           <Image
             source={require("../../assets/icons/copy.svg")}
             resizeMode="contain"
+            style={styles.copy}
           />
         </View>
       </View>
@@ -61,4 +63,31 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
   },
+  totalBalanceContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  totalBalance: {
+    fontSize: 18,
+    color: "gray",
+    marginRight: 10,
+  },
+  eye: {
+    width: 25,
+    height: 25,
+    marginTop: 3,
+  },
+  amount: {
+    fontSize: 26,
+    fontWeight: "bold",
+  },
+  acctNumberContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: 8,
+  },
+  acctNumber: { fontWeight: "bold" },
+  copy: { width: 25, height: 25, marginTop: 3 },
 });
