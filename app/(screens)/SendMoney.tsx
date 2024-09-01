@@ -109,6 +109,19 @@ export default function SendMoney() {
           />
         </View>
       </View>
+      <View style={styles.heroContainer1}>
+        <View>
+          <Text style={styles.heroTime}>12:45pm</Text>
+          <Text style={styles.heroName}>Umasoye Douglas</Text>
+          <View style={styles.heroSentContainer}>
+            <Text style={styles.heroSent}>Sent</Text>
+          </View>
+        </View>
+        <View>
+          <Text style={styles.hundred}>100 USD</Text>
+          <Text style={styles.fees}>Fees 0.00</Text>
+        </View>
+      </View>
     </View>
   );
 }
@@ -222,8 +235,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    marginBottom: 10,
   },
-  recent: { fontSize: 22, fontWeight: 500 },
+  recent: { fontSize: 22, fontWeight: 700 },
   seeMoreContainer: {
     flexDirection: "row",
     alignItems: "center",
@@ -238,4 +252,28 @@ const styles = StyleSheet.create({
   arrowRight: {
     marginTop: 4,
   },
+  heroContainer1: {
+    width: "100%",
+    height: "auto",
+    marginVertical: 15,
+    borderRadius: 18,
+    backgroundColor: "#F6F6F7",
+    padding: 15,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  heroTime: { color: "gray", fontSize: 12 },
+  heroName: { fontSize: 18, fontWeight: 600 },
+  heroSentContainer: {
+    width: "40%",
+    height: "auto",
+    padding: 4,
+    backgroundColor: "#EFFAF2",
+    borderRadius: 4,
+    marginTop: 4,
+  },
+  heroSent: { color: "#3CC35C", fontSize: 12, textAlign: "center" },
+  hundred: { fontSize: 14, fontWeight: 700 },
+  fees: { color: "gray", fontSize: 14 },
 });
