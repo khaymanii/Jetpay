@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   TextInput,
   View,
@@ -18,9 +18,16 @@ const Input: React.FC<InputProps> = ({
   inputStyle,
   ...rest
 }) => {
+  const [isFocused, setIsFocused] = useState(false);
+
   return (
     <View style={[styles.container, containerStyle]}>
-      <TextInput style={[styles.input, inputStyle]} {...rest} />
+      <TextInput
+        style={[styles.input, inputStyle, isFocused && styles.inputFocused]}
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
+        {...rest}
+      />
     </View>
   );
 };
@@ -32,10 +39,12 @@ const styles = StyleSheet.create({
   input: {
     height: 55,
     borderColor: "#CCCCCC",
-    borderWidth: 1,
-    borderRadius: 12,
+    borderWidth: 0,
     paddingHorizontal: 10,
     fontSize: 16,
+  },
+  inputFocused: {
+    borderWidth: 0, // Removes the border on focus
   },
 });
 
