@@ -122,6 +122,15 @@ export default function SendMoney() {
           <Text style={styles.fees}>Fees 0.00</Text>
         </View>
       </View>
+      <View style={styles.footerContainer}>
+        <View>
+          {" "}
+          <Image
+            source={require("../../assets/icons/home.svg")}
+            resizeMode="cover"
+          />
+        </View>
+      </View>
     </View>
   );
 }
@@ -276,4 +285,5 @@ const styles = StyleSheet.create({
   heroSent: { color: "#3CC35C", fontSize: 12, textAlign: "center" },
   hundred: { fontSize: 14, fontWeight: 700 },
   fees: { color: "gray", fontSize: 14 },
+  footerContainer: {},
 });
