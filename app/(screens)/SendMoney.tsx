@@ -123,13 +123,26 @@ export default function SendMoney() {
         </View>
       </View>
       <View style={styles.footerContainer}>
-        <View>
-          {" "}
-          <Image
-            source={require("../../assets/icons/home.svg")}
-            resizeMode="cover"
-          />
-        </View>
+        <Image
+          source={require("../../assets/icons/profile.svg")}
+          resizeMode="cover"
+          style={styles.footerIcons}
+        />
+        <Image
+          source={require("../../assets/icons/book.svg")}
+          resizeMode="cover"
+          style={styles.footerIcons}
+        />{" "}
+        <Image
+          source={require("../../assets/icons/profile.svg")}
+          resizeMode="cover"
+          style={styles.footerIcons}
+        />{" "}
+        <Image
+          source={require("../../assets/icons/settings.svg")}
+          resizeMode="cover"
+          style={styles.footerIcons}
+        />
       </View>
     </View>
   );
@@ -285,5 +298,16 @@ const styles = StyleSheet.create({
   heroSent: { color: "#3CC35C", fontSize: 12, textAlign: "center" },
   hundred: { fontSize: 14, fontWeight: 700 },
   fees: { color: "gray", fontSize: 14 },
-  footerContainer: {},
+  footerContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 8,
+    paddingTop: 40,
+    height: 50,
+  },
+  footerIcons: {
+    width: 28,
+    height: 28,
+  },
 });
