@@ -29,6 +29,38 @@ export default function Beneficiaries() {
           style={styles.input}
         />
       </View>{" "}
+      <View>
+        <Image
+          source={require("../../assets/images/alabi.svg")}
+          resizeMode="cover"
+          style={styles.image}
+        />
+        <Image
+          source={require("../../assets/images/oliver.svg")}
+          resizeMode="cover"
+          style={styles.image}
+        />{" "}
+        <Image
+          source={require("../../assets/images/ebube.svg")}
+          resizeMode="cover"
+          style={styles.image}
+        />{" "}
+        <Image
+          source={require("../../assets/images/douglas.svg")}
+          resizeMode="cover"
+          style={styles.image}
+        />{" "}
+        <Image
+          source={require("../../assets/images/ali.svg")}
+          resizeMode="cover"
+          style={styles.image}
+        />
+        <Image
+          source={require("../../assets/images/egogo.svg")}
+          resizeMode="cover"
+          style={styles.image}
+        />
+      </View>
     </View>
   );
 }
@@ -85,5 +117,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     width: "100%",
     color: "#CCCCCC",
+  },
+  image: {
+    width: "100%",
+    marginBottom: 20,
   },
 });
