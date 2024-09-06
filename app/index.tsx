@@ -1,11 +1,11 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import Beneficiaries from "./(screens)/Beneficiaries";
+import Payment from "./(screens)/Payment";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Beneficiaries />{" "}
+      <Payment />{" "}
     </View>
   );
 }
